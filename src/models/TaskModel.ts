@@ -1,4 +1,4 @@
-export interface TaskModel {
+ interface TaskModel {
 id: string;
     title: string; // Title of the task
     description?: string; // Optional description of the task
@@ -11,3 +11,5 @@ id: string;
     progress?: number; // Optional progress percentage (0-100)
     status?: 'todo' | 'inProgress' | 'done'; // Optional status of
 }
+
+export default TaskModel;

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, FlatList } from 'react-native';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store';
-import { TaskModel } from '../models/TaskModel';
+import { RootState } from '../../src/store/index';
+import TaskModel from '../../src/models/TaskModel';
 import TaskCard from './TaskCard';
 
 interface ProgressTabsProps {

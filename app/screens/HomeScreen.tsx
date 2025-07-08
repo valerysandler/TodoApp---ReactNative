@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Text, FlatList } from 'react-native';
 import { IconButton, TextInput } from 'react-native-paper';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState, AppDispatch } from '../store';
+import { RootState, AppDispatch } from '../../src/store/index';
 import {
     addTask,
     updateTask,
     removeTask,
     loadTasksFromStorage,
-} from '../store/TaskSlice';
-import { TaskModel } from '../models/TaskModel';
+} from '../../src/store/TaskSlice';
+import TaskModel from '../../src/models/TaskModel';
 import TaskCard from '../components/TaskCard';
 import ProgressTabs from '../components/ProgressTabs';
 import EditTaskModal from '../components/EditTaskDialog';
